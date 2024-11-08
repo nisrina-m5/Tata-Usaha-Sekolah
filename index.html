@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tata Usaha Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <h1>Tata Usaha Sekolah</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Beranda</a></li>
+                <li><a href="#" onclick="showSection('struktur')">Struktur Jabatan</a></li>
+                <li><a href="#" onclick="showSection('tentang')">Tentang Sekolah</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="home" class="content active">
+        <h2>Selamat Datang di Tata Usaha Sekolah</h2>
+        <p>Beranda ini berisi informasi umum tentang tata usaha sekolah.</p>
+    </section>
+
+    <!-- Struktur Jabatan -->
+    <section id="struktur" class="content">
+        <h2>Struktur Jabatan</h2>
+        <input type="text" id="searchInput" placeholder="Cari nama..." onkeyup="searchFunction()">
+        <ul id="staffList">
+            <li>Pak Budi - Kepala Tata Usaha</li>
+            <li>Bu Siti - Staf Administrasi</li>
+            <li>Pak Andi - Staf Logistik</li>
+            <li>Bu Rina - Staf Keuangan</li>
+        </ul>
+    </section>
+
+    <!-- Tentang Sekolah -->
+    <section id="tentang" class="content">
+        <h2>Tentang Sekolah</h2>
+        <p>Alamat Sekolah: Jl. Pendidikan No. 10, Jakarta</p>
+        <p>No Telp: (021) 12345678</p>
+        <a href="https://maps.google.com" target="_blank">Lihat di Google Maps</a>
+    </section>
+</body>
+</html>
